@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #FFC0CB, #FF0000);
+    overflow: hidden;
+}
+
+.contenedor-propuesta{
+    border: 3px solid #FFC0CB;
+    border-radius: 15px;
+    padding: 2em;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* max-width: 500px;*/
+   background-image: url("/assets/imgs/images.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}
+
+.titulo-propuesta{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    filter: drop-shadow(5px 5px 5px #B22222);
+    margin-bottom: 4rem;
+}
+
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Mejor que space-around para mantenerlos más juntos */
+    position: relative; /* Asegura que los botones se posicionen bien */
+}
+
+#btn-si{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+
+}
+
+#btn-si:hover{
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+    transform: scale(1.1);
+}
+
+#btn-no{
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative; 
+}
+/*
+#btn-no:hover{
+    box-shadow: 0 0 20px gray;
+    transform: scale(1.1);
+}
+*/
